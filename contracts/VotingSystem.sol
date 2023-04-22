@@ -1,4 +1,11 @@
 pragma solidity ^0.8.0;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract VotingToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("VotingToken", "VOTE") {
+        _mint(msg.sender, initialSupply);
+    }
+}
 
 contract VotingSystem {
     struct Poll {
