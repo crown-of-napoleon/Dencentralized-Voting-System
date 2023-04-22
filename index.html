@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decentralized Voting System</title>
+</head>
+<body>
+  <h1>Decentralized Voting System</h1>
+
+  <h2>Create a new poll</h2>
+  <form id="createPollForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+    <label for="ipfsHash">IPFS Hash:</label>
+    <input type="text" id="ipfsHash" name="ipfsHash" required>
+    <label for="optionCount">Number of options:</label>
+    <input type="number" id="optionCount" name="optionCount" required>
+    <button type="submit">Create Poll</button>
+  </form>
+
+  <h2>Vote in a poll</h2>
+  <form id="voteForm">
+    <label for="pollId">Poll ID:</label>
+    <input type="number" id="pollId" name="pollId" required>
+    <label for="optionIndex">Option Index:</label>
+    <input type="number" id="optionIndex" name="optionIndex" required>
+    <button type="submit">Vote</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
