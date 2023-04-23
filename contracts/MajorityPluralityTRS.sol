@@ -103,4 +103,3 @@ function getResults(uint256 _pollId) public view returns (uint256[] memory) {
 function getPoll(uint256 _pollId) public view returns (Poll memory) {
     return polls[_pollId];
 }
-}
